@@ -6,6 +6,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Yoga Mindfulness Life Coaching Services" />
+        <meta name="keywords" content="HTML, CSS, JavaScript" />
         <title>The Dreaming Tree</title>
         <link rel="icon" href="/logo.webp" />
       </Head>
