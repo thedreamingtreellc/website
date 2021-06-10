@@ -217,11 +217,11 @@ button {
       display: block;
     }
   }
-  // img {
-  //   max-height: 100%;
-  //   display: block;
-  //   margin: 0px auto;
-  // }
+  
+  .eventDescription {
+    display: flex;
+    flex-direction: column;
+  }
   section {
     background-color: white;
     padding: 0px 20px 25px 20px;
