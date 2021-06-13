@@ -15,6 +15,7 @@
 * {
   box-sizing: border-box;
   font-family: normal;
+  
 }
 
 html,
@@ -59,6 +60,7 @@ body {
     border-radius: 8px;
     border: 2px solid var(--darkGreen);
   }
+  
 }
 
 /* HTML elements */
@@ -120,17 +122,18 @@ nav {
   background-color: var(--green);
   ul {
     list-style-type: none;
+    margin: 0px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding: 10px;
     justify-content: center;
+    flex-wrap: wrap;
     li {
       text-transform: uppercase;
       color: white;
       transition: color 0.2s ease-in;
-      margin-left: 20px;
+      display: block;
+      margin: 0px 20px;
       svg {
         min-width: 15px;
         max-width: 15px;
@@ -147,9 +150,6 @@ nav {
       &:hover {
         color: var(--black);
       }
-    }
-    &:nth-child(1) {
-      margin-left: 0px;
     }
   }
 }
@@ -370,6 +370,9 @@ button {
   justify-items: center;
   padding-top: 15px;
   margin-bottom: 15px;
+  img {
+    height: 120px;
+  }
 }
 
 .bold {
@@ -387,6 +390,11 @@ button {
   li {
     padding: 10px 20px;
   }
+}
+
+// flexbox-gap-fix
+nav ul li:nth-child(1) {
+  margin-bottom: 20px;
 }
 
 /* Media Queries */
@@ -408,4 +416,10 @@ button {
     justify-content: center;
   }
   
+}
+
+@media screen and (min-width: 459px) {
+  nav ul li:nth-child(1) {
+    margin-bottom: 0px;
+  }
 }

@@ -6,7 +6,7 @@ export default function Header() {
     <header>
       <div className="topHeader">
         <Link href="/">
-            <img className="cursorPointer" src="Logo.webp" />
+            <img className="cursorPointer" src="Logo2.jpg" />
         </Link>
         <Link href="/">
             <h1 className="cursorPointer">The Dreaming Tree</h1>
