@@ -307,10 +307,10 @@ button {
 
 .pictureWrap {
   display: flex;
-  gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
   img {
+    margin: 10px;
     max-height: 300px;
     width:auto;
   }
