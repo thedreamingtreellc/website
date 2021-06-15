@@ -31,7 +31,7 @@ export default function Event({img, title, when, where, cost, description, costD
           className="eventDescription"
         />
         <p><sup>*</sup>{costDescription}</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT56B8MIc5uu7VPYvwqWOyEjd_Jz28xGa2RKL4AJ-twYzZ7g/viewform">Registration Form</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT56B8MIc5uu7VPYvwqWOyEjd_Jz28xGa2RKL4AJ-twYzZ7g/viewform" target="_blank">Registration Form</a>
       </section>
     </article>
   )

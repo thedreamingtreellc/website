@@ -375,8 +375,33 @@ button {
   }
 }
 
+.buttonLink {
+  background-color: var(--red);
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid var(--red);
+  transition: all 0.2s linear;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  width: fit-content;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+    color: var(--red);
+  }
+}
+
 .bold {
   font-family: bold;
+}
+
+.center {
+  text-align: center;
 }
 
 

@@ -13,6 +13,8 @@ export default function Home() {
       <p>I created The Dreaming Tree from a calling in my heart that has led me to teach others how to live a more resilient and joyful life. <span className="red">I love to learn</span> and <span className="red">I love to teach</span>. My deepest desire is to empower others with the knowledge and support they need to live a magical life of joy, passion, and resilience.</p>
       <p>Through my journey of connecting with my authentic self and discovering my soul’s desires, I have obtained a bachelor’s degree in Communication Disorders, a master’s degree in Education, a certification in Children and Teen Coaching, a certification in Yoga for both children and adults and various trainings in relevant areas such as mindfulness, massage, and Reiki.</p>
       <p>At The Dreaming Tree, I offer workshops, classes, and individual coaching to help children, teens, and families dream beautiful dreams and live a life of love, light, and purpose. To learn more about me and what kind of work I do, please click on the “About Me” tab at the top of this page!</p>
+      <p className="center">To register for any of the events, please complete the form in the link below.</p>
+      <a className="buttonLink" href="https://docs.google.com/forms/d/e/1FAIpQLSdT56B8MIc5uu7VPYvwqWOyEjd_Jz28xGa2RKL4AJ-twYzZ7g/viewform" target="_blank">Registration Form</a>
     </>
   )
 }
