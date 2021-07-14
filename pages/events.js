@@ -46,7 +46,8 @@ export default function EventsPage({...info}) {
 
 export async function getServerSideProps(context) {
   // returns a list of all of the events
-  const info = await client.fetch('*[_type == "event"] | order(when)')
+  const today = new Date();
+  const info = await client.fetch('*[_type == "event" && when > now()] | order(when)')
   return {
     props: { info }
   }
