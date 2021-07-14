@@ -4,7 +4,9 @@ import ImageUrlBuilder from '@sanity/image-url'
 
 export default function EventsPage({...info}) {
 
-  const eventsArray = Object.values(info);
+  const eventsInfo = Object.values(info);
+
+  const eventsArray = eventsInfo[0];
 
   // SANITY IMAGE BUILDER
   const builder = ImageUrlBuilder(client)
@@ -17,17 +19,20 @@ export default function EventsPage({...info}) {
   const eventsComponents = eventsArray.map(
     (event) => {
 
+      console.log("This is an event")
+      console.log(event)
+
     //converts the datestring to a real date
-    const eventDate = new Date(event[0].when)
+    const eventDate = new Date(event.when)
     //map function
     return <Event
-        img={urlFor(event[0].image).url()}
-        title={event[0].name}
+        img={urlFor(event.image).url()}
+        title={event.name}
         when={`${eventDate.toLocaleDateString()} at ${eventDate.toLocaleTimeString([],{hour: 'numeric', minute:"2-digit"})}`}
-        where={event[0].where}
-        cost={event[0].cost}
-        costDescription={event[0].costDescription}
-        description={event[0].description}
+        where={event.where}
+        cost={event.cost}
+        costDescription={event.costDescription}
+        description={event.description}
       />
   })
   
@@ -41,7 +46,7 @@ export default function EventsPage({...info}) {
 
 export async function getServerSideProps(context) {
   // returns a list of all of the events
-  const info = await client.fetch('*[_type == "event"]')
+  const info = await client.fetch('*[_type == "event"] | order(when)')
   return {
     props: { info }
   }
